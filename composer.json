@@ -1,0 +1,36 @@
+{
+    "name": "mohamedreda/reviewable",
+    "description": "Add Reviewable definition to Models",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Moohamed Reda",
+            "email": "mohamed.reda.bot@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "orchestra/testbench": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "MohamedReda\\Reviewable\\":"src/",
+            "App\\":"app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MohamedReda\\Reviewable\\":"src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel":{
+            "providers":[
+                "MohamedReda\\Reviewable\\ReviewableServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
